@@ -46,6 +46,14 @@ See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](do
 
 These screenshots show the **updated Build 143 desktop application** with New Conversation and Results navigation fixes. They are ahead of the currently published Build 142 installer; the patch release is not yet uploaded. **No walkthrough MP4 is attached yet.**
 
+## Help test and improve Pandesh
+
+Your real Windows/Ollama experience is valuable—even if you're not a developer.
+
+**[Report a bug or model compatibility result](https://github.com/siddharthakki/Pandesh_Releases/issues/new/choose)** · **[Start contributing](https://github.com/siddharthakki/Pandesh/blob/main/docs/CONTRIBUTOR_START_HERE.md)** · **[Good first issues](https://github.com/siddharthakki/Pandesh/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**
+
+Please include your installed build and steps that demonstrate what actually worked. Never post credentials, private data or unredacted logs.
+
 ## Project and roadmap
 
 - [**Open-source project**](https://github.com/siddharthakki/Pandesh) — MIT license, public architecture, contribution/security policies, source publication gates
