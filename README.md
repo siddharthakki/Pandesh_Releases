@@ -80,6 +80,12 @@ The development release report records:
 
 These tests do not establish compatibility with every model or device. Read the [release notes](RELEASE_NOTES.md) and [known limitations / FAQ](docs/TROUBLESHOOTING.md).
 
+## Credits, third-party software and licenses
+
+Pandesh builds on [Pi Agent Core / Pi AI](https://github.com/earendil-works/pi), [Electron](https://github.com/electron/electron), and other open-source libraries. It connects to separately installed tools such as [Ollama](https://ollama.com/), and supports optional integrations with [OpenCode](https://github.com/anomalyco/opencode) and [Hermes Agent](https://github.com/NousResearch/hermes-agent) when configured.
+
+**[View third-party acknowledgements and license information](THIRD_PARTY_NOTICES.md).** AI model weights and connected cloud services have their own terms. This document is a verified initial attribution index; a complete binary-level redistribution-notices audit remains outstanding.
+
 ## Help shape Pandesh
 
 We want real reports from people who actually install and use the assistant.
@@ -90,6 +96,6 @@ Helpful details: Pandesh version/build, Windows version, local model, a concise 
 
 ---
 
-[Releases](https://github.com/siddharthakki/Pandesh_Releases/releases) · [Getting started](docs/GETTING_STARTED.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) · [Media showcase](docs/SHOWCASE.md) · [Checksums](SHA256SUMS.txt)
+[Releases](https://github.com/siddharthakki/Pandesh_Releases/releases) · [Getting started](docs/GETTING_STARTED.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) · [Media showcase](docs/SHOWCASE.md) · [Checksums](SHA256SUMS.txt) · [Credits & licenses](THIRD_PARTY_NOTICES.md)
 
 *Pandesh is early-access software; review permissions and keep backups of important data.*
