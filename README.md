@@ -6,9 +6,9 @@ Pandesh is a **Windows desktop AI assistant** designed for local LLM conversatio
 
 [**⬇ Get Pandesh v0.1.1 Alpha**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [**📖 Setup guide**](docs/GETTING_STARTED.md) · [**🖼 Screenshots**](docs/SHOWCASE.md) · [**🏗 Architecture**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) · [**🐛 Feedback**](https://github.com/siddharthakki/Pandesh_Releases/issues)
 
-![Pandesh dark Panda desktop UI, later Build 143 development preview](assets/screenshots/01-welcome-chat.png)
+![Pandesh v0.1.2 Build 143 updated Panda desktop interface](assets/screenshots/01-welcome-chat.png)
 
-<sub>UI preview: **v0.1.2 Build 143** with demo content. Current public installer is **v0.1.1 Build 142**. Screens are not independently verified live tool results.</sub>
+<sub>The screenshots show the **fixed v0.1.2 Build 143** interface. The current public installer is still **v0.1.1 Build 142** until the newer binaries are published. See the [Build 143 fixes](BUILD_143_FIXES.md).</sub>
 
 ## Download for Windows
 
@@ -44,7 +44,7 @@ See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](do
 
 [![Pandesh Tasks and Results development preview](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
 
-These images are from a **later development build (143)** and contain **demonstration data**. The public v0.1.1 installer is Build 142. **No public walkthrough MP4 is attached to this release yet.**
+These screenshots show the **updated Build 143 desktop application** with New Conversation and Results navigation fixes. They are ahead of the currently published Build 142 installer; the patch release is not yet uploaded. **No walkthrough MP4 is attached yet.**
 
 ## Project and roadmap
 
