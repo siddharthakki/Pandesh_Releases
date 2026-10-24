@@ -1,0 +1,52 @@
+name: Windows alpha bug report
+description: Report installed Pandesh behavior with sanitized reproduction steps
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please report the version you actually installed. Build 143 screenshots do not mean that the public Build 142 installer has the same fixes. Do NOT attach private emails, full logs, tokens, or database files."
+  - type: input
+    id: version
+    attributes:
+      label: Installed Pandesh version and build
+      placeholder: "e.g. v0.1.1 Alpha / Build 142"
+    validations:
+      required: true
+  - type: input
+    id: win
+    attributes:
+      label: Windows edition and hardware
+      placeholder: "Windows 11 x64, CPU, GPU, RAM if relevant"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Local model and provider
+      placeholder: "e.g. Ollama 0.x / qwen2.5-coder:7b"
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: "Use synthetic data; say exactly which button or request you used."
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and observable evidence
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy review
+      options:
+        - label: I have removed credentials, personal paths, private messages and sensitive data from anything I attach.
+          required: true
