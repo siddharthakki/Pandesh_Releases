@@ -1,0 +1,46 @@
+name: Local Ollama model compatibility report
+description: Share a reproducible local model experience; not an unverified benchmark
+title: "model: "
+body:
+  - type: markdown
+    attributes:
+      value: "Real reports help the community find models that work with Pandesh. Do not claim tool execution succeeded without observing a tool result. Only share non-sensitive test prompts."
+  - type: input
+    id: build
+    attributes:
+      label: Installed Pandesh version/build
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Exact model tag and Ollama version
+      placeholder: "qwen2.5-coder:7b / Ollama version"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: GPU VRAM / RAM / OS
+      placeholder: "Windows 11 x64 / RTX 3090 24GB / 64GB RAM"
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What did you try?
+      description: "Describe the specific non-sensitive prompt and whether it needed a tool."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual outcome and how you verified it
+      description: "Separate inference, model self-awareness, tool requests and tool completion."
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: Optional measured latency or limitations
+      description: "Include units and measurement method. Skip if not measured."

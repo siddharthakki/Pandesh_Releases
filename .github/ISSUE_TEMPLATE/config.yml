@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation and troubleshooting
+    url: https://github.com/siddharthakki/Pandesh_Releases/blob/main/docs/GETTING_STARTED.md
+    about: Check the setup guide before filing an issue.
+  - name: Source code and documentation contribution
+    url: https://github.com/siddharthakki/Pandesh/blob/main/docs/CONTRIBUTOR_START_HERE.md
+    about: Help with the public repository, roadmap or onboarding docs.
+  - name: Security reporting
+    url: https://github.com/siddharthakki/Pandesh/blob/main/SECURITY.md
+    about: Never disclose vulnerabilities or credentials in public issues.

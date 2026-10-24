@@ -1,52 +1,51 @@
-# Pandesh Screenshots and Walkthrough Demo
+# Pandesh v0.1.2 Build 143 — screenshots and interface fixes
 
-[Pandesh Home](../README.md) · [Getting Started](GETTING_STARTED.md)
+**These screenshots show the updated v0.1.2 Alpha, Build 143 desktop app**, including fixes for New Conversation and Tasks & Results. The [currently public installer](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) is still v0.1.1 Build 142 and does not necessarily include those fixes.
 
-## Real Application Screenshots
+These are screenshots of **the actual updated Pandesh interface**, not old designs or mockups. The captured on-screen responses demonstrate presentation, but screenshots alone cannot certify each tool's underlying execution. A model name mentioned by the chat answer differs from the active model shown in the interface—an issue to validate separately, not a reason to dismiss the new UI screenshots.
 
-Authentic captures from the verified Pandesh desktop application window, using an isolated synthetic demo workspace and local Ollama model (`qwen2.5-coder:7b`). Zero personal mail, calendar entries, private tokens, or external paths.
+[Download the public alpha](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [Getting started](GETTING_STARTED.md) · [Architecture diagram](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) · [Roadmap](https://github.com/siddharthakki/Pandesh/blob/main/docs/ROADMAP.md)
 
-### 1. Welcome / Chat Interface
-Panda interface with calm presence, clean new conversation pane, and pinned composer ready for user prompts.
+## Gallery
 
-![Welcome / Chat](../assets/screenshots/01-welcome-chat.png)
+### 1. New conversation — Panda desktop
 
-### 2. Local Model Connected
-Truthful indicator of the resident local Ollama runner (`qwen2.5-coder:7b`), connected Core state, and strict `local-only` execution policy.
+An empty-conversation UI with a pinned composer and local-model selector.
 
-![Local Model Connected](../assets/screenshots/02-local-model-connected.png)
+![Pandesh v0.1.2 Build 143 Panda desktop welcome screen](../assets/screenshots/01-welcome-chat.png)
 
-### 3. Real Chat Conversation
-Interactive multi-turn conversation with local model response and active model attribution badge.
+### 2. AI models and provider connections
 
-![Real Chat](../assets/screenshots/03-real-chat.png)
+Settings surface for local/OpenAI-compatible and optional cloud providers. The displayed LAN endpoint is demo configuration.
 
-### 4. Read-Only Diagnostics
-Evidence-backed system telemetry execution (`run_system_diagnostics`) inspecting host hardware, GPU VRAM, memory, and runtime health.
+![Pandesh desktop AI model provider settings in development Build 143](../assets/screenshots/02-local-model-connected.png)
 
-![Read-Only Diagnostics](../assets/screenshots/04-read-only-diagnostics.png)
+### 3. Conversation preview
 
-### 5. Governed Approval Request
-Real pending mutation approval request displaying visible scope, exact proposed file diff, and actionable Approve & Execute / Deny decision controls.
+A conversation about local model availability; the returned model name differs from the selected model label. This model-self-awareness behavior needs separate validation.
 
-![Approval Workflow](../assets/screenshots/05-real-approval-request.png)
+![Pandesh desktop conversation demonstrating markdown and structured replies](../assets/screenshots/03-real-chat.png)
 
-### 6. Tasks & Results Subnav Layout
-Separated Tasks and Results subnav tabs (`#btn-tasks-tab-tasks` and `#btn-tasks-tab-results`), providing instant 1-click access to generated documents and deliverables without scrolling past task history.
+### 4. Diagnostics presentation
 
-![Tasks and Results](../assets/screenshots/06-completed-tasks-and-results.png)
+The updated UI renders a diagnostic result; the machine values shown have not been independently validated against the executing environment.
 
-## Walkthrough Demo Video
+![Pandesh desktop diagnostic-results example with sample hardware values](../assets/screenshots/04-read-only-diagnostics.png)
 
-### Authentic 75–90-Second Walkthrough Storyboard
+### 5. Approval request presentation
 
-| Time | Scene | Demonstrated Behavior |
-| --- | --- | --- |
-| 0–12s | First Launch & Welcome | Clean launch, calm panda welcome, empty conversation pane |
-| 12–28s | Local Model Connection | Truthful Ollama connection, resident model status, zero cloud leaks |
-| 28–46s | Real Conversation Turn | Question answered with local markdown code & prose |
-| 46–65s | Read-Only Diagnostics Tool | Governed diagnostic tool execution with observed hardware facts |
-| 65–78s | Governed Approval Lifecycle | Approval prompt raised, scope inspected, approved & executed |
-| 78–90s | Tasks & Results Verification | Instant access to deliverables via Results tab, clean new chat reset |
+Example request for a proposed `package.json` edit with a visible diff and Approve/Reject controls. An approval screen does not by itself establish execution.
 
-> The walkthrough video recording (`Pandesh-Alpha-Walkthrough.mp4`) is packaged with the official release assets on GitHub releases alongside the verified portable and installer archives.
+![Pandesh desktop approval dialog showing a proposed package file edit](../assets/screenshots/05-real-approval-request.png)
+
+### 6. Tasks and results
+
+Build 143's one-click Results tab and artifact cards, addressing the earlier excessively long scrolling layout.
+
+![Pandesh v0.1.2 Build 143 Tasks and Results navigation preview](../assets/screenshots/06-completed-tasks-and-results.png)
+
+## Video walkthrough
+
+**Not yet uploaded.** The public v0.1.1 release currently has no walkthrough MP4 asset. An earlier storyboard is a production plan, not a completed video.
+
+A verified video should capture a clean demo session, keep private applications and notifications out of frame, demonstrate an actual Ollama model response and real tool evidence, and clearly distinguish sample data from live system measurements. See the [source project](https://github.com/siddharthakki/Pandesh) for development and contribution information.
