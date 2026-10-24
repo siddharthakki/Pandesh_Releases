@@ -1,56 +1,95 @@
-# Pandesh
+# Pandesh 🐼
 
-**Pandesh** is a local-first AI assistant for Windows, powered by local AI models through [Ollama](https://ollama.com/).
+### Your local-first AI assistant for Windows
 
-> **Public alpha · v0.1.1 · Build 142**  
-> This is early-access software. The first public release binaries are being transferred to this repository. **There is not yet a downloadable public release here.**
+**Chat with local AI. Run supported tasks. Keep control of consequential actions.**
+
+Pandesh connects to locally running [Ollama](https://ollama.com/) models and brings conversations, approvals, memory, reminders and assistant workflows into a desktop interface. It's an **early public alpha**: try it, tell us what worked, and help us make the everyday experience reliable.
+
+[**⬇ Download Pandesh for Windows**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [**📖 Getting started**](docs/GETTING_STARTED.md) · [**🛠 Troubleshooting**](docs/TROUBLESHOOTING.md) · [**💬 Report an issue**](https://github.com/siddharthakki/Pandesh_Releases/issues)
+
+> **Current release:** v0.1.1 Public Alpha · Build 142 · Windows 10/11 x64  
+> **Source development is private.** This repository distributes official release files and end-user documentation.
+
+---
 
 ## Download
 
-**[Open Pandesh Releases](https://github.com/siddharthakki/Pandesh_Releases/releases)**
+| Package | Link | Best for |
+| --- | --- | --- |
+| **Windows Installer** | [Download Pandesh-Setup.exe](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-Setup.exe) | Most Windows users |
+| **Portable ZIP** | [Download portable version](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-v0.1.1-alpha-win32-x64-portable.zip) | Extract and launch without a standard install |
+| **Checksums** | [SHA256SUMS.txt](SHA256SUMS.txt) | Verify downloads |
 
-When the `v0.1.1-pandesh-alpha` release is published here, download one of these Windows x64 packages:
+**Important:** The binaries are not code-signed yet. Download only from this official repository and check the checksum before running. This alpha requires a separate Ollama installation and at least one installed model.
 
-| Package | When to use |
+## See Pandesh in action
+
+**[Screenshots & walkthrough video →](docs/SHOWCASE.md)**
+
+The gallery and recording are currently being prepared from **the actual packaged alpha**. We won't publish design mockups as working-product screenshots, or a fake automation as a successful run.
+
+A first look will cover:
+
+| Experience | What we'll demonstrate |
 | --- | --- |
-| `Pandesh-Setup.exe` | Standard per-user Windows installation |
-| `Pandesh-v0.1.1-alpha-win32-x64-portable.zip` | Portable version; extract and run `Launch-Pandesh.cmd` |
+| 🐼 **Chat** | First launch, conversation and the Panda interface |
+| 🧠 **Local AI** | Selecting or connecting an installed Ollama model |
+| 🔎 **Diagnostics** | A genuine read-only tool request and returned results |
+| ✅ **Approvals** | Request → review → approval or rejection → outcome |
+| 📅 **Daily assistant** | Reminders, memory and briefing workflow where configured |
 
-**Do not download from unofficial mirrors.** Compare the downloaded file's SHA-256 with [SHA256SUMS.txt](SHA256SUMS.txt).
+## Quick start — 3 steps
 
-## Get started
-
-1. Use Windows 10 or 11 (64-bit).
-2. [Install Ollama](https://ollama.com/download) and start its local service.
-3. Download an Ollama model suited to your hardware; for example, `ollama pull qwen2.5-coder:3b`. The release was also tested with `qwen3-coder:swift-27b` on higher-VRAM hardware.
-4. Install Pandesh or extract the portable ZIP and run its launcher.
-5. Select your available model in Pandesh, then start a conversation.
-
-Example first questions: **“What can you do?”** and **“Run read-only system diagnostics.”**
-
-## What the first alpha includes
-
-- Local-model conversations with Ollama
-- Governed execution of supported tasks and human approval for consequential actions
-- Persistent memory, commitments, and task records
-- Scheduled briefing and reminder infrastructure
-- Read-only system diagnostics
-- Process-management safety restrictions
-
-## Validation and limitations
-
-The private development project reports **27/27 Windows Sandbox acceptance checks passing** for clean install, process safety, shutdown, and data preservation, plus an isolated real-model workflow using `qwen3-coder:swift-27b`. These checks do not guarantee behavior on every Windows configuration.
-
-**Known limitations:** This alpha is unsigned, so Windows SmartScreen may warn. Local Ollama must be installed and reachable; cloud fallback is disabled by default. Microphone functionality depends on your hardware and permissions. Some integrations require separate authorization.
-
-You can verify the installer checksum using PowerShell:
+**1. Install Ollama** from [ollama.com/download](https://ollama.com/download), then in PowerShell:
 
 ```powershell
-Get-FileHash .\Pandesh-Setup.exe -Algorithm SHA256
+ollama pull qwen2.5-coder:3b
+ollama list
 ```
 
-## Feedback
+**2. [Download Pandesh](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha)** and install it (or extract the portable ZIP and run `Launch-Pandesh.cmd`).
 
-Use the [Issues](https://github.com/siddharthakki/Pandesh_Releases/issues) section to report installation, launch, model connectivity, or process-safety problems. Please include Pandesh version/build, Windows version, model and steps to reproduce. **Never post tokens, credentials, private emails, personal data, or unredacted logs.**
+**3. Launch Pandesh** and start with:
 
-This repository is for **public release downloads and release support**. The development source repository is maintained separately.
+> Hi Pandesh — introduce yourself and tell me what you can do.
+
+Then try a read-only request:
+
+> Run read-only system diagnostics and show what you actually checked.
+
+See the [complete step-by-step guide](docs/GETTING_STARTED.md) for model setup, permissions, memory, reminders and safety tips.
+
+## What's included in this alpha?
+
+- **Local-model chat** through Ollama
+- **Governed actions:** user approval for consequential operations, with evidence-backed outcomes
+- **Persistent memory, commitments and task records**
+- **Scheduling** for assistant briefings and follow-ups
+- **Read-only system diagnostics** and runtime health information
+- **Process-management safety fences** designed to prevent unintended process termination
+
+Tool availability, model reliability, and connected-service behavior depend on your configuration. A model claiming it performed an action is **not** confirmation that the action really ran.
+
+## Tested release baseline
+
+The development release report records:
+
+- **27/27 Windows Sandbox checks passed**, including clean installation, unrelated-process survival, shutdown and data preservation.
+- **Isolated live-model acceptance passed** using `qwen3-coder:swift-27b` for memory approval, recall, commitments and scheduled briefing behavior.
+
+These tests do not establish compatibility with every model or device. Read the [release notes](RELEASE_NOTES.md) and [known limitations / FAQ](docs/TROUBLESHOOTING.md).
+
+## Help shape Pandesh
+
+We want real reports from people who actually install and use the assistant.
+
+**[🐛 Report a bug or request a usability improvement](https://github.com/siddharthakki/Pandesh_Releases/issues)**
+
+Helpful details: Pandesh version/build, Windows version, local model, a concise reproduction, and a **redacted** screenshot/video if relevant. **Do not post credentials, private emails, unredacted logs, or your Core data directory.**
+
+---
+
+[Releases](https://github.com/siddharthakki/Pandesh_Releases/releases) · [Getting started](docs/GETTING_STARTED.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) · [Media showcase](docs/SHOWCASE.md) · [Checksums](SHA256SUMS.txt)
+
+*Pandesh is early-access software; review permissions and keep backups of important data.*
