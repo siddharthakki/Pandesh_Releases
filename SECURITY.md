@@ -5,7 +5,7 @@ This repository distributes public Windows alpha installers, portable packages a
 ## Report an issue
 
 - **Installation, download, model compatibility or usability bug:** [File a public issue](https://github.com/siddharthakki/Pandesh_Releases/issues/new/choose) with a redacted reproducer.
-- **Security issue:** do not reveal exploit details, credentials or private data in public. Use GitHub's **Security → Advisories → Report a vulnerability** after the repository owner enables **Private vulnerability reporting**. If unavailable, ask for a private channel without revealing the issue.
+- **Security issue:** report privately via **[Security → Advisories → Report a vulnerability](https://github.com/siddharthakki/Pandesh_Releases/security/advisories/new)**. Private vulnerability reporting is active. Do not post exploit details, credentials or private data in public issues.
 
 ## Official release integrity
 
@@ -21,7 +21,7 @@ This repository distributes public Windows alpha installers, portable packages a
 
 Anyone may suggest fixes, translations or documentation improvements in issues and PRs. Proposed files are **untrusted** until independently reviewed. Only maintainer-approved changes belong in the official docs; binary publishing requires a separate, verified maintainer operation.
 
-The `.github/CODEOWNERS` file routes changes to the maintainer. It does not enforce review without an active ruleset; see [maintainer security setup](https://github.com/siddharthakki/Pandesh/blob/main/docs/MAINTAINER_SECURITY_SETUP.md).
+The `.github/CODEOWNERS` file routes changes to the maintainer. An active branch ruleset protects `main`. See [maintainer security setup](https://github.com/siddharthakki/Pandesh/blob/main/docs/MAINTAINER_SECURITY_SETUP.md).
 
 ## Current release
 
