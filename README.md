@@ -1,22 +1,23 @@
-# Pandesh 🐼 — Download the Local AI Personal Assistant for Windows
+# Pandesh 🐼 — Windows Personal AI Assistant
 
-**A Jarvis-style personal AI assistant that runs local AI models through Ollama and helps with real tasks under your control.**
+**Local AI conversations, governed execution, approvals and everyday desktop assistant workflows for Windows.**
 
-Pandesh is a **Windows desktop AI assistant** designed for local LLM conversations, governed task execution, reminders, memory and practical day-to-day workflows. If you're exploring **self-hosted AI assistants**, **Ollama tools**, or a personal assistant you can run on your own PC, start here.
+Looking for an Ollama desktop companion, an open-source personal AI assistant for Windows, or an alternative to cloud-only assistants? Pandesh runs local LLMs on your computer and combines conversations, memory, scheduled briefings and human approvals in an approachable Panda interface.
 
-[**⬇ Get Pandesh v0.1.1 Alpha**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [**📖 Setup guide**](docs/GETTING_STARTED.md) · [**🖼 Screenshots**](docs/SHOWCASE.md) · [**🏗 Architecture**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) · [**🐛 Feedback**](https://github.com/siddharthakki/Pandesh_Releases/issues)
+[**⬇ Download Pandesh Build 143**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.2-pandesh-alpha) • [**📖 Getting started**](docs/GETTING_STARTED.md) • [**🔧 Troubleshooting**](docs/TROUBLESHOOTING.md) • [**🐞 Report an issue**](https://github.com/siddharthakki/Pandesh_Releases/issues) • [**📦 Source Code**](https://github.com/siddharthakki/Pandesh)
 
-![Pandesh v0.1.2 Build 143 updated Panda desktop interface](assets/screenshots/01-welcome-chat.png)
+> **Current release:** v0.1.2 Public Alpha (Build 143) • Windows 10/11 x64  
+> **Source code:** [github.com/siddharthakki/Pandesh](https://github.com/siddharthakki/Pandesh) (MIT License)
 
-<sub>The screenshots show the **fixed v0.1.2 Build 143** interface. The current public installer is still **v0.1.1 Build 142** until the newer binaries are published. See the [Build 143 fixes](BUILD_143_FIXES.md).</sub>
+---
 
-## Download for Windows
+## Download
 
-| Package | Direct download | When to choose |
+| Package | Link | Best for |
 | --- | --- | --- |
-| **Windows installer** | [Pandesh-Setup.exe](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-Setup.exe) | Recommended Windows 10/11 x64 installation |
-| **Portable ZIP** | [Pandesh-v0.1.1-alpha-win32-x64-portable.zip](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-v0.1.1-alpha-win32-x64-portable.zip) | Extract and launch without a standard installation |
-| **SHA-256** | [SHA256SUMS.txt](SHA256SUMS.txt) | Check downloaded files against the expected hashes |
+| **Windows Installer** | [Download Pandesh-Setup.exe (Build 143)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.2-pandesh-alpha/Pandesh-Setup.exe) | Most Windows users |
+| **Portable ZIP** | [Download portable version (Build 143)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.2-pandesh-alpha/Pandesh-v0.1.2-alpha-win32-x64-portable.zip) | Extract and launch without a standard install |
+| **Checksums** | [SHA256SUMS.txt](SHA256SUMS.txt) | Verify downloads |
 
 **This alpha is unsigned.** Install from the official GitHub release only, verify the checksum, and carefully review any Windows warning.
 
@@ -24,7 +25,7 @@ Pandesh is a **Windows desktop AI assistant** designed for local LLM conversatio
 
 1. Install [Ollama for Windows](https://ollama.com/download).
 2. In PowerShell, install a model: `ollama pull qwen2.5-coder:3b`. Confirm `ollama list` shows it.
-3. Install Pandesh (or extract the entire portable ZIP and launch `Launch-Pandesh.cmd`), then start a conversation.
+3. Install Pandesh Build 143 (or extract the entire portable ZIP and launch `Launch-Pandesh.cmd`), then start a conversation.
 
 See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](docs/TROUBLESHOOTING.md).
 
@@ -32,6 +33,7 @@ See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](do
 
 - Run supported local AI model conversations through Ollama
 - Record governed memory and tasks, with permissioned execution and observable outcomes
+- Direct Tasks and Results views with honest execution evidence
 - Offer daily assistant workflows, reminders and follow-ups where scheduling and connectors are configured
 - Provide read-only diagnostics and results presentation when supported
 - Work with optional external tools/providers when separately installed or authorized
@@ -42,9 +44,9 @@ See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](do
 
 [**See the full six-image gallery →**](docs/SHOWCASE.md)
 
-[![Pandesh Tasks and Results development preview](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
+[![Pandesh Tasks and Results Build 143](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
 
-These screenshots show the **updated Build 143 desktop application** with New Conversation and Results navigation fixes. They are ahead of the currently published Build 142 installer; the patch release is not yet uploaded. **No walkthrough MP4 is attached yet.**
+These screenshots show the **updated Build 143 desktop application** with New Conversation and Results navigation fixes.
 
 ## Help test and improve Pandesh
 
@@ -56,13 +58,11 @@ Please include your installed build and steps that demonstrate what actually wor
 
 ## Project and roadmap
 
-- [**Open-source project**](https://github.com/siddharthakki/Pandesh) — MIT license, public architecture, contribution/security policies, source publication gates
+- [**Open-source project**](https://github.com/siddharthakki/Pandesh) — MIT license, public architecture, contribution/security policies
 - [**Architecture diagram**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) — desktop, Core, models, external integrations and approval lifecycle
 - [**Roadmap**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ROADMAP.md) — real-world reliability before feature expansion
 - [**Privacy and safety**](https://github.com/siddharthakki/Pandesh/blob/main/docs/PRIVACY.md)
 - [**Third-party acknowledgements**](THIRD_PARTY_NOTICES.md)
-
-**Source publication is in preparation.** The new MIT source repository does not yet contain the complete reviewed Core; development history remains private until the security and redistribution checks are complete.
 
 ## Tested release baseline
 
