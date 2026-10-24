@@ -1,0 +1,7 @@
+# Public binary distribution and official release notes are maintainer-controlled.
+# Approval enforcement requires a GitHub ruleset. This file alone does not block merges.
+* @siddharthakki
+/.github/ @siddharthakki
+/SHA256SUMS.txt @siddharthakki
+/THIRD_PARTY_NOTICES.md @siddharthakki
+/RELEASE_NOTES.md @siddharthakki
