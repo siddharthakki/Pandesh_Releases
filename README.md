@@ -80,6 +80,10 @@ The development release report records:
 
 These tests do not establish compatibility with every model or device. Read the [release notes](RELEASE_NOTES.md) and [known limitations / FAQ](docs/TROUBLESHOOTING.md).
 
+## Source code and open-source contributions
+
+Pandesh is being prepared for publication under MIT at **[github.com/siddharthakki/Pandesh](https://github.com/siddharthakki/Pandesh)**. That repository currently contains the license, contribution/security policies and [publication checklist](https://github.com/siddharthakki/Pandesh/blob/main/docs/OPEN_SOURCE_STATUS.md); **the sanitized application source has not been uploaded yet**. The existing development repository remains private for security review. The Windows downloads above are already available.
+
 ## Credits, third-party software and licenses
 
 Pandesh builds on [Pi Agent Core / Pi AI](https://github.com/earendil-works/pi), [Electron](https://github.com/electron/electron), and other open-source libraries. It connects to separately installed tools such as [Ollama](https://ollama.com/), and supports optional integrations with [OpenCode](https://github.com/anomalyco/opencode) and [Hermes Agent](https://github.com/NousResearch/hermes-agent) when configured.
