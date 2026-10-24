@@ -1,105 +1,67 @@
-# Pandesh 🐼
+# Pandesh 🐼 — Download the Local AI Personal Assistant for Windows
 
-### Your local-first AI assistant for Windows
+**A Jarvis-style personal AI assistant that runs local AI models through Ollama and helps with real tasks under your control.**
 
-**Chat with local AI. Run supported tasks. Keep control of consequential actions.**
+Pandesh is a **Windows desktop AI assistant** designed for local LLM conversations, governed task execution, reminders, memory and practical day-to-day workflows. If you're exploring **self-hosted AI assistants**, **Ollama tools**, or a personal assistant you can run on your own PC, start here.
 
-Pandesh connects to locally running [Ollama](https://ollama.com/) models and brings conversations, approvals, memory, reminders and assistant workflows into a desktop interface. It's an **early public alpha**: try it, tell us what worked, and help us make the everyday experience reliable.
+[**⬇ Get Pandesh v0.1.1 Alpha**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [**📖 Setup guide**](docs/GETTING_STARTED.md) · [**🖼 Screenshots**](docs/SHOWCASE.md) · [**🏗 Architecture**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) · [**🐛 Feedback**](https://github.com/siddharthakki/Pandesh_Releases/issues)
 
-[**⬇ Download Pandesh for Windows**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [**📖 Getting started**](docs/GETTING_STARTED.md) · [**🛠 Troubleshooting**](docs/TROUBLESHOOTING.md) · [**💬 Report an issue**](https://github.com/siddharthakki/Pandesh_Releases/issues)
+![Pandesh dark Panda desktop UI, later Build 143 development preview](assets/screenshots/01-welcome-chat.png)
 
-> **Current release:** v0.1.1 Public Alpha · Build 142 · Windows 10/11 x64  
-> **Source development is private.** This repository distributes official release files and end-user documentation.
+<sub>UI preview: **v0.1.2 Build 143** with demo content. Current public installer is **v0.1.1 Build 142**. Screens are not independently verified live tool results.</sub>
 
----
+## Download for Windows
 
-## Download
-
-| Package | Link | Best for |
+| Package | Direct download | When to choose |
 | --- | --- | --- |
-| **Windows Installer** | [Download Pandesh-Setup.exe](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-Setup.exe) | Most Windows users |
-| **Portable ZIP** | [Download portable version](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-v0.1.1-alpha-win32-x64-portable.zip) | Extract and launch without a standard install |
-| **Checksums** | [SHA256SUMS.txt](SHA256SUMS.txt) | Verify downloads |
+| **Windows installer** | [Pandesh-Setup.exe](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-Setup.exe) | Recommended Windows 10/11 x64 installation |
+| **Portable ZIP** | [Pandesh-v0.1.1-alpha-win32-x64-portable.zip](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.1-pandesh-alpha/Pandesh-v0.1.1-alpha-win32-x64-portable.zip) | Extract and launch without a standard installation |
+| **SHA-256** | [SHA256SUMS.txt](SHA256SUMS.txt) | Check downloaded files against the expected hashes |
 
-**Important:** The binaries are not code-signed yet. Download only from this official repository and check the checksum before running. This alpha requires a separate Ollama installation and at least one installed model.
+**This alpha is unsigned.** Install from the official GitHub release only, verify the checksum, and carefully review any Windows warning.
 
-## See Pandesh in action
+## Set up in three steps
 
-**[Screenshots & walkthrough video →](docs/SHOWCASE.md)**
+1. Install [Ollama for Windows](https://ollama.com/download).
+2. In PowerShell, install a model: `ollama pull qwen2.5-coder:3b`. Confirm `ollama list` shows it.
+3. Install Pandesh (or extract the entire portable ZIP and launch `Launch-Pandesh.cmd`), then start a conversation.
 
-The gallery and recording are currently being prepared from **the actual packaged alpha**. We won't publish design mockups as working-product screenshots, or a fake automation as a successful run.
+See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](docs/TROUBLESHOOTING.md).
 
-A first look will cover:
+## What can Pandesh do?
 
-| Experience | What we'll demonstrate |
-| --- | --- |
-| 🐼 **Chat** | First launch, conversation and the Panda interface |
-| 🧠 **Local AI** | Selecting or connecting an installed Ollama model |
-| 🔎 **Diagnostics** | A genuine read-only tool request and returned results |
-| ✅ **Approvals** | Request → review → approval or rejection → outcome |
-| 📅 **Daily assistant** | Reminders, memory and briefing workflow where configured |
+- Run supported local AI model conversations through Ollama
+- Record governed memory and tasks, with permissioned execution and observable outcomes
+- Offer daily assistant workflows, reminders and follow-ups where scheduling and connectors are configured
+- Provide read-only diagnostics and results presentation when supported
+- Work with optional external tools/providers when separately installed or authorized
 
-## Quick start — 3 steps
+**Alpha reality:** model compatibility varies; model self-identification, permission-aware follow-ups and some UI behaviors are still being improved. A model claiming a tool ran does not prove it did. An external connector with insufficient permissions cannot complete that task.
 
-**1. Install Ollama** from [ollama.com/download](https://ollama.com/download), then in PowerShell:
+## Screenshots and demos
 
-```powershell
-ollama pull qwen2.5-coder:3b
-ollama list
-```
+[**See the full six-image gallery →**](docs/SHOWCASE.md)
 
-**2. [Download Pandesh](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha)** and install it (or extract the portable ZIP and run `Launch-Pandesh.cmd`).
+[![Pandesh Tasks and Results development preview](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
 
-**3. Launch Pandesh** and start with:
+These images are from a **later development build (143)** and contain **demonstration data**. The public v0.1.1 installer is Build 142. **No public walkthrough MP4 is attached to this release yet.**
 
-> Hi Pandesh — introduce yourself and tell me what you can do.
+## Project and roadmap
 
-Then try a read-only request:
+- [**Open-source project**](https://github.com/siddharthakki/Pandesh) — MIT license, public architecture, contribution/security policies, source publication gates
+- [**Architecture diagram**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) — desktop, Core, models, external integrations and approval lifecycle
+- [**Roadmap**](https://github.com/siddharthakki/Pandesh/blob/main/docs/ROADMAP.md) — real-world reliability before feature expansion
+- [**Privacy and safety**](https://github.com/siddharthakki/Pandesh/blob/main/docs/PRIVACY.md)
+- [**Third-party acknowledgements**](THIRD_PARTY_NOTICES.md)
 
-> Run read-only system diagnostics and show what you actually checked.
-
-See the [complete step-by-step guide](docs/GETTING_STARTED.md) for model setup, permissions, memory, reminders and safety tips.
-
-## What's included in this alpha?
-
-- **Local-model chat** through Ollama
-- **Governed actions:** user approval for consequential operations, with evidence-backed outcomes
-- **Persistent memory, commitments and task records**
-- **Scheduling** for assistant briefings and follow-ups
-- **Read-only system diagnostics** and runtime health information
-- **Process-management safety fences** designed to prevent unintended process termination
-
-Tool availability, model reliability, and connected-service behavior depend on your configuration. A model claiming it performed an action is **not** confirmation that the action really ran.
+**Source publication is in preparation.** The new MIT source repository does not yet contain the complete reviewed Core; development history remains private until the security and redistribution checks are complete.
 
 ## Tested release baseline
 
-The development release report records:
+The development report records **27/27 isolated Windows Sandbox checks** for the release candidate and a local model acceptance journey using `qwen3-coder:swift-27b`. These reported results do not guarantee every model, tool or Windows configuration.
 
-- **27/27 Windows Sandbox checks passed**, including clean installation, unrelated-process survival, shutdown and data preservation.
-- **Isolated live-model acceptance passed** using `qwen3-coder:swift-27b` for memory approval, recall, commitments and scheduled briefing behavior.
-
-These tests do not establish compatibility with every model or device. Read the [release notes](RELEASE_NOTES.md) and [known limitations / FAQ](docs/TROUBLESHOOTING.md).
-
-## Source code and open-source contributions
-
-Pandesh is being prepared for publication under MIT at **[github.com/siddharthakki/Pandesh](https://github.com/siddharthakki/Pandesh)**. That repository currently contains the license, contribution/security policies and [publication checklist](https://github.com/siddharthakki/Pandesh/blob/main/docs/OPEN_SOURCE_STATUS.md); **the sanitized application source has not been uploaded yet**. The existing development repository remains private for security review. The Windows downloads above are already available.
-
-## Credits, third-party software and licenses
-
-Pandesh builds on [Pi Agent Core / Pi AI](https://github.com/earendil-works/pi), [Electron](https://github.com/electron/electron), and other open-source libraries. It connects to separately installed tools such as [Ollama](https://ollama.com/), and supports optional integrations with [OpenCode](https://github.com/anomalyco/opencode) and [Hermes Agent](https://github.com/NousResearch/hermes-agent) when configured.
-
-**[View third-party acknowledgements and license information](THIRD_PARTY_NOTICES.md).** AI model weights and connected cloud services have their own terms. This document is a verified initial attribution index; a complete binary-level redistribution-notices audit remains outstanding.
-
-## Help shape Pandesh
-
-We want real reports from people who actually install and use the assistant.
-
-**[🐛 Report a bug or request a usability improvement](https://github.com/siddharthakki/Pandesh_Releases/issues)**
-
-Helpful details: Pandesh version/build, Windows version, local model, a concise reproduction, and a **redacted** screenshot/video if relevant. **Do not post credentials, private emails, unredacted logs, or your Core data directory.**
+[Release notes](RELEASE_NOTES.md) · [Checksums](SHA256SUMS.txt) · [Report a bug](https://github.com/siddharthakki/Pandesh_Releases/issues)
 
 ---
 
-[Releases](https://github.com/siddharthakki/Pandesh_Releases/releases) · [Getting started](docs/GETTING_STARTED.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) · [Media showcase](docs/SHOWCASE.md) · [Checksums](SHA256SUMS.txt) · [Credits & licenses](THIRD_PARTY_NOTICES.md)
-
-*Pandesh is early-access software; review permissions and keep backups of important data.*
+*Pandesh is an independent project. “Jarvis-style” describes the personal-assistant concept; it does not imply affiliation with Marvel/J.A.R.V.I.S. or other products. Third-party software, services and AI model weights retain their own licenses.*
