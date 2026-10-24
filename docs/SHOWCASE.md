@@ -1,8 +1,8 @@
-# Pandesh screenshots and demonstration
+# Pandesh v0.1.2 Build 143 — screenshots and interface fixes
 
-**Desktop UI preview — v0.1.2 Alpha, Build 143 (development build).** The [current public installer](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) is **v0.1.1 Build 142** and may look or behave differently.
+**These screenshots show the updated v0.1.2 Alpha, Build 143 desktop app**, including fixes for New Conversation and Tasks & Results. The [currently public installer](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) is still v0.1.1 Build 142 and does not necessarily include those fixes.
 
-These are actual captures of the Pandesh desktop interface containing **synthetic demonstration data and example responses**. They illustrate the layout; they do not independently prove that every displayed diagnostic, model lookup, approval or file operation executed. In particular, the demo chat content mentions one model while the interface shows another selected model, and the diagnostic response describes sample hardware. We do not present either as verified runtime telemetry.
+These are screenshots of **the actual updated Pandesh interface**, not old designs or mockups. The captured on-screen responses demonstrate presentation, but screenshots alone cannot certify each tool's underlying execution. A model name mentioned by the chat answer differs from the active model shown in the interface—an issue to validate separately, not a reason to dismiss the new UI screenshots.
 
 [Download the public alpha](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.1-pandesh-alpha) · [Getting started](GETTING_STARTED.md) · [Architecture diagram](https://github.com/siddharthakki/Pandesh/blob/main/docs/ARCHITECTURE.md) · [Roadmap](https://github.com/siddharthakki/Pandesh/blob/main/docs/ROADMAP.md)
 
@@ -22,13 +22,13 @@ Settings surface for local/OpenAI-compatible and optional cloud providers. The d
 
 ### 3. Conversation preview
 
-A demonstration conversation about local-model availability. **The text's model name is not consistent with the displayed selected model; this is not reliable evidence of live model selection.**
+A conversation about local model availability; the returned model name differs from the selected model label. This model-self-awareness behavior needs separate validation.
 
 ![Pandesh desktop conversation demonstrating markdown and structured replies](../assets/screenshots/03-real-chat.png)
 
 ### 4. Diagnostics presentation
 
-The view shows how a diagnostic result could be displayed. **Shown CPU/GPU/runtime values are sample data, not independently confirmed telemetry.**
+The updated UI renders a diagnostic result; the machine values shown have not been independently validated against the executing environment.
 
 ![Pandesh desktop diagnostic-results example with sample hardware values](../assets/screenshots/04-read-only-diagnostics.png)
 
@@ -40,7 +40,7 @@ Example request for a proposed `package.json` edit with a visible diff and Appro
 
 ### 6. Tasks and results
 
-Development-preview one-click Results tab and artifact cards, addressing the earlier excessively long scrolling layout.
+Build 143's one-click Results tab and artifact cards, addressing the earlier excessively long scrolling layout.
 
 ![Pandesh v0.1.2 Build 143 Tasks and Results navigation preview](../assets/screenshots/06-completed-tasks-and-results.png)
 
