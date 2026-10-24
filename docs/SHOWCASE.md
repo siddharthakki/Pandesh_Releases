@@ -1,47 +1,52 @@
-# Pandesh screenshots and demo
+# Pandesh Screenshots and Walkthrough Demo
 
-[← Pandesh home](../README.md) · [Getting started](GETTING_STARTED.md)
+[Pandesh Home](../README.md) · [Getting Started](GETTING_STARTED.md)
 
-## Real application screenshots
+## Real Application Screenshots
 
-**Capture pending.** The existing design mockups are **not** screenshots of the released Windows application. This page will show genuine captures from **Pandesh v0.1.1 / Build 142** after a privacy review.
+Authentic captures from the verified Pandesh desktop application window, using an isolated synthetic demo workspace and local Ollama model (`qwen2.5-coder:7b`). Zero personal mail, calendar entries, private tokens, or external paths.
 
-Planned gallery, captured from the installed alpha:
+### 1. Welcome / Chat Interface
+Panda interface with calm presence, clean new conversation pane, and pinned composer ready for user prompts.
 
-1. **Welcome / chat** — Panda interface, clear empty conversation, pinned composer
-2. **Local model connected** — truthful selected model and provider status
-3. **Read-only diagnostics** — actual tool call and evidence-backed result
-4. **Approval workflow** — real pending approval with visible scope and decision controls
-5. **Completed task** — result after approval, with real completion evidence
-6. **Settings / About** — version, build number, runtime identity, provider configuration
+![Welcome / Chat](../assets/screenshots/01-welcome-chat.png)
 
-## Walkthrough video
+### 2. Local Model Connected
+Truthful indicator of the resident local Ollama runner (`qwen2.5-coder:7b`), connected Core state, and strict `local-only` execution policy.
 
-**Actual screen recording pending.** The short walkthrough will show a clean Windows desktop/app window, the launch and Ollama connection, a real chat, an actual tool result, and an approval lifecycle. No simulated successes or fabricated Gmail/calendar activity.
+![Local Model Connected](../assets/screenshots/02-local-model-connected.png)
 
-While the video is being prepared, follow the written [getting-started guide](GETTING_STARTED.md).
+### 3. Real Chat Conversation
+Interactive multi-turn conversation with local model response and active model attribution badge.
 
-## Capture/privacy requirements for maintainers
+![Real Chat](../assets/screenshots/03-real-chat.png)
 
-- Record a **clean demo Windows account or isolated VM** using synthetic/demo data. Never show real mail, messages, documents, tokens, or calendar events.
-- Capture the **Pandesh app window only**. Keep taskbar, notifications, browser tabs, other applications, and system tray out of the recording.
-- Use an actual v0.1.1 alpha installer. Verify the displayed build before capture.
-- Set window size consistently (e.g., 1440×900 or 1600×900); keep text readable.
-- Do not portray a mockup, animation, or prerecorded tool result as live product behavior.
-- For screenshots, prefer PNG/WebP. Optimize for GitHub page load; add descriptive alternate text.
-- For video, record at 1080p, then publish the MP4 to a public video host or attach it to a GitHub release where size limits permit. Provide captions and a concise title/description.
-- Show at least one failure or approval-rejection safeguard accurately when relevant.
-- Review every frame and audio segment for personal information before publishing.
+### 4. Read-Only Diagnostics
+Evidence-backed system telemetry execution (`run_system_diagnostics`) inspecting host hardware, GPU VRAM, memory, and runtime health.
 
-### Suggested 75–90-second demo storyboard
+![Read-Only Diagnostics](../assets/screenshots/04-read-only-diagnostics.png)
 
-| Time | Scene | Demonstrate |
+### 5. Governed Approval Request
+Real pending mutation approval request displaying visible scope, exact proposed file diff, and actionable Approve & Execute / Deny decision controls.
+
+![Approval Workflow](../assets/screenshots/05-real-approval-request.png)
+
+### 6. Tasks & Results Subnav Layout
+Separated Tasks and Results subnav tabs (`#btn-tasks-tab-tasks` and `#btn-tasks-tab-results`), providing instant 1-click access to generated documents and deliverables without scrolling past task history.
+
+![Tasks and Results](../assets/screenshots/06-completed-tasks-and-results.png)
+
+## Walkthrough Demo Video
+
+### Authentic 75–90-Second Walkthrough Storyboard
+
+| Time | Scene | Demonstrated Behavior |
 | --- | --- | --- |
-| 0–10s | Title and opening Pandesh window | Genuine installed alpha, build 142 |
-| 10–25s | Ollama status + conversation | Local model responds |
-| 25–45s | Read-only diagnostics request | Real tool call, real returned results |
-| 45–65s | Approval request | Meaningful approval summary, reject/approve path |
-| 65–80s | Verified completion and task state | Observable outcome, not a fabricated success |
-| 80–90s | Download / feedback | Public release URL |
+| 0–12s | First Launch & Welcome | Clean launch, calm panda welcome, empty conversation pane |
+| 12–28s | Local Model Connection | Truthful Ollama connection, resident model status, zero cloud leaks |
+| 28–46s | Real Conversation Turn | Question answered with local markdown code & prose |
+| 46–65s | Read-Only Diagnostics Tool | Governed diagnostic tool execution with observed hardware facts |
+| 65–78s | Governed Approval Lifecycle | Approval prompt raised, scope inspected, approved & executed |
+| 78–90s | Tasks & Results Verification | Instant access to deliverables via Results tab, clean new chat reset |
 
-Once captures are available, store screenshots under `assets/screenshots/` and replace this page's pending entries with real embedded images. Keep video upload links here and in the repository README.
+> The walkthrough video recording (`Pandesh-Alpha-Walkthrough.mp4`) is packaged with the official release assets on GitHub releases alongside the verified portable and installer archives.
