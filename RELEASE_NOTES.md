@@ -1,3 +1,26 @@
+# Pandesh v0.1.3 Public Alpha — Build 144
+
+**Release channel:** Alpha  
+**Platform:** Windows 10/11 x64  
+**Release source revision:** 979394209ef7491d904b88e17812fa4b0fa0d65b ([siddharthakki/Pandesh@9793942](https://github.com/siddharthakki/Pandesh/commit/979394209ef7491d904b88e17812fa4b0fa0d65b))
+
+## Highlights
+
+- **Nonblocking Background Task Delegation:** Async background task delegation with verified recovery and truthful cancellation.
+- **Installer & Process Hardening:** Hardened process isolation during smoke tests and upgrades; uninstaller runs with /NOCLOSEAPPLICATIONS preventing Windows Restart Manager interference.
+- **Clean Verified Build:** Clean working tree verification with embedded build identity (Build 144) and full checksum manifests.
+
+## Verification
+
+- **14/14 packaged installer smoke tests passed** cleanly with headless CDP driver and isolated runtime environment.
+- **Clean source state** at commit 9793942.
+
+## Checksums (SHA-256)
+5C1621346EA9D7946BB85A9B0BDA931DA43EC9E7B7F2FCA411825AA255494AAF  Pandesh-Setup.exe
+DA0AE6F31B6E41D6C558230AC08663556C19C1B281C8EF38369117AB0FCAE68F  Pandesh-v0.1.3-alpha-win32-x64-portable.zip
+
+---
+
 # Pandesh v0.1.1 Public Alpha — Build 142
 
 **Release channel:** Alpha  
