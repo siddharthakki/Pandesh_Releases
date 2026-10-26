@@ -4,9 +4,9 @@
 
 Looking for an Ollama desktop companion, an open-source personal AI assistant for Windows, or an alternative to cloud-only assistants? Pandesh runs local LLMs on your computer and combines conversations, memory, scheduled briefings and human approvals in an approachable Panda interface.
 
-[**⬇ Download Pandesh Build 144**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.3-pandesh-alpha) • [**📖 Getting started**](docs/GETTING_STARTED.md) • [**🔧 Troubleshooting**](docs/TROUBLESHOOTING.md) • [**🐞 Report an issue**](https://github.com/siddharthakki/Pandesh_Releases/issues) • [**📦 Source Code**](https://github.com/siddharthakki/Pandesh)
+[**⬇ Download Pandesh Build 145**](https://github.com/siddharthakki/Pandesh_Releases/releases/tag/v0.1.4-pandesh-alpha) • [**📖 Getting started**](docs/GETTING_STARTED.md) • [**🔧 Troubleshooting**](docs/TROUBLESHOOTING.md) • [**🐞 Report an issue**](https://github.com/siddharthakki/Pandesh_Releases/issues) • [**📦 Source Code**](https://github.com/siddharthakki/Pandesh)
 
-> **Current release:** v0.1.3 Public Alpha (Build 144) • Windows 10/11 x64  
+> **Current release:** v0.1.4 Public Alpha (Build 145) • Windows 10/11 x64  
 > **Source code:** [github.com/siddharthakki/Pandesh](https://github.com/siddharthakki/Pandesh) (MIT License)
 
 ---
@@ -15,8 +15,8 @@ Looking for an Ollama desktop companion, an open-source personal AI assistant fo
 
 | Package | Link | Best for |
 | --- | --- | --- |
-| **Windows Installer** | [Download Pandesh-Setup.exe (Build 144)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.3-pandesh-alpha/Pandesh-Setup.exe) | Most Windows users |
-| **Portable ZIP** | [Download portable version (Build 144)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.3-pandesh-alpha/Pandesh-v0.1.3-alpha-win32-x64-portable.zip) | Extract and launch without a standard install |
+| **Windows Installer** | [Download Pandesh-Setup.exe (Build 145)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.4-pandesh-alpha/Pandesh-Setup.exe) | Most Windows users |
+| **Portable ZIP** | [Download portable version (Build 145)](https://github.com/siddharthakki/Pandesh_Releases/releases/download/v0.1.4-pandesh-alpha/Pandesh-v0.1.4-alpha-win32-x64-portable.zip) | Extract and launch without a standard install |
 | **Checksums** | [SHA256SUMS.txt](SHA256SUMS.txt) | Verify downloads |
 
 **This alpha is unsigned.** Install from the official GitHub release only, verify the checksum, and carefully review any Windows warning.
@@ -25,7 +25,7 @@ Looking for an Ollama desktop companion, an open-source personal AI assistant fo
 
 1. Install [Ollama for Windows](https://ollama.com/download).
 2. In PowerShell, install a model: `ollama pull qwen2.5-coder:3b`. Confirm `ollama list` shows it.
-3. Install Pandesh Build 144 (or extract the entire portable ZIP and launch `Launch-Pandesh.cmd`), then start a conversation.
+3. Install Pandesh Build 145 (or extract the entire portable ZIP and launch `Launch-Pandesh.cmd`), then start a conversation.
 
 See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](docs/TROUBLESHOOTING.md).
 
@@ -44,9 +44,9 @@ See the [full setup guide](docs/GETTING_STARTED.md) and [troubleshooting FAQ](do
 
 [**See the full six-image gallery →**](docs/SHOWCASE.md)
 
-[![Pandesh Tasks and Results Build 144](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
+[![Pandesh Tasks and Results Build 145](assets/screenshots/06-completed-tasks-and-results.png)](docs/SHOWCASE.md)
 
-These screenshots show the **updated Build 144 desktop application** with New Conversation and Results navigation fixes.
+These screenshots show the **updated Build 145 desktop application** with New Conversation and Results navigation fixes.
 
 ## Help test and improve Pandesh
 

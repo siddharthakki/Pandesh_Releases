@@ -1,3 +1,26 @@
+# Pandesh v0.1.4 Public Alpha — Build 145
+
+**Release channel:** Alpha  
+**Platform:** Windows 10/11 x64  
+**Release source revision:** 2eeb5fae8a251e4dc00b45df9ebbef921b8dead3 ([siddharthakki/Pandesh@2eeb5fa](https://github.com/siddharthakki/Pandesh/commit/2eeb5fae8a251e4dc00b45df9ebbef921b8dead3))
+
+## Highlights
+
+- **Launcher Profile Alignment:** Aligned launcher default data directory with installed desktop (%LOCALAPPDATA%\\KarkeDikha\\desktop), ensuring credentials, model selection, and configurations are reliably preserved across launch methods.
+- **Task Outcome Evidence Bounding & Deduplication:** Guarded background task outcome finalization by deduplicating tool calls and bounding evidence items to prevent metadata bloat, while preserving full underlying execution receipts.
+- **Packaged Smoke & Upgrade Verification:** 14/14 packaged installer smoke tests passed cleanly in isolated runtime with verified in-place upgrade handling.
+
+## Verification
+
+- **14/14 packaged installer smoke tests passed** cleanly with headless CDP driver and isolated runtime environment.
+- **Clean source state** at commit 2eeb5fae8a251e4dc00b45df9ebbef921b8dead3.
+
+## Checksums (SHA-256)
+27FD5698148273B0FE548060AA831F5F1944B531EF9F04F4F65AD2B043FEB639  Pandesh-Setup.exe
+957211727ECCA4F2FF54E2F6754D55E548C5A311A19FFBD78C7BA0A8CC276A49  Pandesh-v0.1.4-alpha-win32-x64-portable.zip
+
+---
+
 # Pandesh v0.1.3 Public Alpha — Build 144
 
 **Release channel:** Alpha  
